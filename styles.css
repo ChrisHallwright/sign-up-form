@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.outer {
+  display: flex;
+  flex-direction: row;
+}
+
+/*   Left panel.  */
+
+.left-panel {
+  position: relative;
+}
+
+#odin {
+  position: absolute;
+  top: 8rem;
+  left: 9rem;
+  z-index: 2;
+}
+
+@font-face {
+  font-family: Odin;
+  src: url("./Norsebold.otf") format("opentype");
+}
+
+p.odin {
+  position: absolute;
+  top: 4rem;
+  left: 15rem;
+  color: white;
+  font-family: Odin;
+  font-size: 5rem;
+/*  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  height: 180px;
+  text-align: center;
+  padding: 50px 0; */
+}
+
+p.pic-credit {
+  position: absolute;
+  bottom: 0rem;
+  left: 9rem;
+}
+
+p.pic-credit,
+p.pic-credit a {
+  color: white;
+  font-size: small;
+}
+
+/*. Right panel.  */
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 800px;
+}
+
+div.upper,
+div.lower {
+  background-color: rgba(250, 250, 250, 0.954);
+}
+
+div.middle {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 7px rgb(240, 240, 240);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-row div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 70px 20px 0;
+}
+
+div.upper,
+div.middle {
+  padding: 60px 100px;
+}
+
+div.lower {
+  padding: 30px 100px;
+}
+
+input {
+  border: 2px solid #E5E7EB;
+  border-radius: 3px;
+  width: 180px;
+}
+
+input[type="password"]:user-invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 3px 3px 3px lightgray;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
