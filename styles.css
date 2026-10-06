@@ -10,19 +10,20 @@ body {
 /*   Left panel.  */
 
 .left-panel {
-  flex-grow: 0;
-  position: relative;
   height: 880px;
   width: 60%;
   background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
-#odin {
-  position: absolute;
-  top: 13rem;
-  left: 8rem;
+.logo {
+  position: relative;
+  top: 12rem;
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
@@ -31,13 +32,12 @@ body {
 }
 
 p.odin {
-  position: absolute;
-  top: 9rem;
-  left: 13.5rem;
   color: white;
   font-family: Odin;
   font-size: 5rem;
-/*  background-color: black;
+  position: relative;
+  bottom: 4rem;
+  /*  background-color: black;
   opacity: 0.6;
   width: 100%;
   margin: 0;
@@ -47,16 +47,22 @@ p.odin {
   padding: 50px 0; */
 }
 
-p.pic-credit {
-  position: absolute;
-  bottom: 0rem;
-  left: 9rem;
+
+div.credit {
+  position: relative;
+  top: 37rem;
+  display: flex;
+  justify-content: center;
 }
 
 p.pic-credit,
 p.pic-credit a {
   color: white;
   font-size: small;
+}
+
+p.pic-credit a{
+  text-decoration: underline;
 }
 
 /*. Right panel.  */
@@ -96,17 +102,20 @@ div.upper {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
 div.middle {
   height: 200px;
-  padding: 50px 50px 20px 50px;
+  padding: 0 50px 40px 50px;
   position: relative;
 }
-div.middle > p {
+
+div.middle>p {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
 div.lower {
-  padding: 20px 0 100px 50px;
+  padding: 20px 0 170px 50px;
 }
 
 input {
@@ -132,7 +141,7 @@ label {
 button {
   background-color: #596D48;
   color: white;
-  padding: 5px 20px;
+  padding: 10px 40px;
   border-radius: 5px;
   font-size: large;
 }
