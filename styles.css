@@ -11,12 +11,17 @@ body {
 
 .left-panel {
   position: relative;
+  height: 880px;
+  width: 72%;
+  background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #odin {
   position: absolute;
-  top: 8rem;
-  left: 9rem;
+  top: 13rem;
+  left: 8rem;
   z-index: 2;
 }
 
@@ -27,8 +32,8 @@ body {
 
 p.odin {
   position: absolute;
-  top: 4rem;
-  left: 15rem;
+  top: 9rem;
+  left: 13.5rem;
   color: white;
   font-family: Odin;
   font-size: 5rem;
@@ -61,6 +66,7 @@ p.pic-credit a {
   flex-direction: column;
   justify-content: space-between;
   height: 800px;
+  box-sizing: border-box;
 }
 
 div.upper,
@@ -85,11 +91,14 @@ div.middle {
   padding: 0 70px 20px 0;
 }
 
-div.upper,
+div.upper {
+  padding: 120px 100px 60px 100px;
+  font-size: x-large;
+}
+
 div.middle {
   padding: 60px 100px;
 }
-
 div.lower {
   padding: 30px 100px;
 }
