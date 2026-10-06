@@ -124,7 +124,7 @@ input {
   width: 180px;
 }
 
-input[type="password"]:user-invalid {
+input:user-invalid {
   border-color: red;
 }
 
