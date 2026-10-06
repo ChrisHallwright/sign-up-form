@@ -111,6 +111,7 @@ input:focus {
 
 label {
   font-size: 0.6rem;
+  letter-spacing: 0.1rem;
 }
 
 button {
