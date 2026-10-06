@@ -10,9 +10,10 @@ body {
 /*   Left panel.  */
 
 .left-panel {
+  flex-grow: 0;
   position: relative;
   height: 880px;
-  width: 72%;
+  width: 60%;
   background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -22,7 +23,6 @@ body {
   position: absolute;
   top: 13rem;
   left: 8rem;
-  z-index: 2;
 }
 
 @font-face {
@@ -64,8 +64,7 @@ p.pic-credit a {
 .right-panel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 800px;
+  height: 880px;
   box-sizing: border-box;
 }
 
@@ -92,15 +91,22 @@ div.middle {
 }
 
 div.upper {
-  padding: 120px 100px 60px 100px;
-  font-size: x-large;
+  height: 185px;
+  padding: 150px 280px 10px 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-
 div.middle {
-  padding: 60px 100px;
+  height: 200px;
+  padding: 50px 50px 20px 50px;
+  position: relative;
+}
+div.middle > p {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 div.lower {
-  padding: 30px 100px;
+  padding: 20px 0 100px 50px;
 }
 
 input {
@@ -120,7 +126,7 @@ input:focus {
 
 label {
   font-size: 0.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.12rem;
 }
 
 button {
@@ -128,4 +134,10 @@ button {
   color: white;
   padding: 5px 20px;
   border-radius: 5px;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+  color: red;
 }
